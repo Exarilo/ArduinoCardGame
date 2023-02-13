@@ -8,10 +8,25 @@ namespace ArduinoCardGame
 {
     public class Player
     {
-        private string name;
-        private Hand hand;
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public int Rank { get; set; }
+        public IEnumerable<Deck> DeckList { get; set; }
+        public IEnumerable<Card> CardAvailable { get; set; }
+
         public Deck deck { get; set; }
-        //private List<Card> hand;
+        public int Victory { get; set; }
+        public int Defeat { get; set; }
+
+        private Hand Hand { get; set; }
+
+
+        public Player()
+        {
+
+        }
+
+            //private List<Card> hand;
 
         public Player(string name)
         {
@@ -19,11 +34,6 @@ namespace ArduinoCardGame
                 throw new Exception("A player must have a name");
             name = name;
             deck = new Deck();
-        }
-
-        public string Name
-        {
-            get { return name; }
         }
 
 

@@ -1,0 +1,44 @@
+<Players>
+   <Player id="cardId123456789">
+      <Name>Player1</Name>
+      <Rank>123</Rank>
+      <DeckList>
+        <Deck id="deck1">
+            <Name>MonDeck1</Name>
+            <Card id="01"></Card>
+            <Card id="02"></Card>
+            <Card id="03"></Card>
+            <Card id="04"></Card>
+            <Card id="05"></Card>
+            <Card id="06"></Card>  
+            <Victory>4</Victory>
+            <Defeat>2</Defeat>
+        </Deck>
+        <Deck id="deck2">
+            <Name>MonDeck2</Name>
+            <Card id="01"></Card>
+            <Card id="02"></Card>
+            <Card id="03"></Card>
+            <Card id="04"></Card>
+            <Card id="05"></Card>
+            <Card id="06"></Card>  
+            <Victory>6</Victory>
+            <Defeat>6</Defeat>
+        </Deck>
+      </DeckList>
+      <CardAvailable>
+        <Card id="01"></Card>
+        <Card id="02"></Card>
+        <Card id="03"></Card>
+        <Card id="04"></Card>
+        <Card id="05"></Card>
+        <Card id="06"></Card>  
+        <Card id="08"></Card>
+        <Card id="53"></Card>    
+      </CardAvailable>
+      <Stats>
+        <Victory>10</Victory>
+        <Defeat>8</Defeat>
+      </Stats>
+   </Player>
+</Players>

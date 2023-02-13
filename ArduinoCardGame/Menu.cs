@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ArduinoCardGame
 {
@@ -21,8 +22,8 @@ namespace ArduinoCardGame
             InitializeComponent();
 
             //RECUPERER LES JOUEURS DANS UNE BDD CELON L'ID DE LA CARTE OU API 
-            game.AddPlayer(player1);
-            game.AddPlayer(player2);
+          //  game.AddPlayer(player1);
+          //  game.AddPlayer(player2);
 
 
 
@@ -30,6 +31,11 @@ namespace ArduinoCardGame
 
         private void Menu_Load(object sender, EventArgs e)
         {
+            game.Load();
+        }
+        private void LoadXml()
+        {
+
 
         }
     }

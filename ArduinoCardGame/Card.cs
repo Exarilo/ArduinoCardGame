@@ -7,34 +7,39 @@ using System.Threading.Tasks;
 
 namespace ArduinoCardGame
 {
-    public enum EffectTrigger
-    {
-        None,
-        OnAppear,
-        OnDeath,
-        OnTurnStart,
-        OnTurnEnd
-    }
+
     public class Card
     {
+        public string Id { get; set; }
         public string Name { get; set; }
         public int Attack { get; set; }
-        public int Resistance { get; set; }
+        public int HP { get; set; }
         public int ManaCost { get; set; }
+        public string Type { get; set; }
+        public string Familly { get; set; }
         public string Description { get; set; }
-        public Bitmap Picture { get; set; }
-        public EffectTrigger EffectTrigger { get; set; }
-        public Card(string name, int attack, int defense, int manaCost, string description, Bitmap picture, EffectTrigger effectTrigger)
+        public string PicturePath { get; set; }
+        public List<Effect> Effects { get; set; }
+        public Card()
+        {
+
+        }
+        public Card(int id)
+        {
+            this.Id = Id;
+        }
+        public Card(string name, int attack, int hp, int manaCost, string description, string picturePath, List<Effect> effects)
         {
             this.Name = name;
             this.Attack = attack;
-            this.Resistance = defense;
+            this.HP = hp;
             this.ManaCost = manaCost;
             this.Description = description;
-            this.Picture = picture;
-            this.EffectTrigger = effectTrigger;
+            this.PicturePath = picturePath;
+            this.Effects = effects;
         }
 
+        /*
         public void Draw(Graphics graphics, int x, int y)
         {
             graphics.DrawImage(Picture, x, y, 150, 200);
@@ -42,7 +47,8 @@ namespace ArduinoCardGame
             graphics.DrawString("Attack: " + Attack, new Font("Arial", 10), Brushes.Black, x + 10, y + 225);
             graphics.DrawString("Defense: " + Resistance, new Font("Arial", 10), Brushes.Black, x + 10, y + 240);
             graphics.DrawString("Mana Cost: " + ManaCost, new Font("Arial", 10), Brushes.Black, x + 10, y + 255);
-        }
+        }*/
+        
     }
 
 }

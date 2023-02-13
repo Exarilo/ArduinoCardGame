@@ -1,0 +1,27 @@
+<Cards>
+    <Card id="01">
+        <Name>Carte1</Name>
+        <Attack>4</Attack>
+        <HP>6</HP>
+        <ManaCost>8</ManaCost>
+        <Type>Monster</Type>
+        <Familly>Pokemon</Familly>
+        <Description>La description de ma carte 1</Description>
+        <PicturePath>C//User/path</PicturePath>
+        <Effect>
+            <Name>Burn</Name>
+            <Triggers>OnAppear</Triggers>
+            <Damages>2</Damages>
+            <Target>SingleOne</Target>
+        </Effect>
+        <Effect>
+            <Name>Explode</Name>
+            <Triggers>OnDeath</Triggers>
+            <Damages>1</Damages>
+            <Target>Around</Target>
+        </Effect>
+    </Card>
+</Cards>
+
+
+
